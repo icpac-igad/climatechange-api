@@ -3,7 +3,7 @@ const { all, spread } = require("axios");
 const redis = require("redis");
 const { promisify } = require("util");
 
-const client = redis.createClient(6379);
+const client = redis.createClient(process.env.REDIS_URL || 6379);
 
 const redisGetAsync = promisify(client.get).bind(client);
 const redisSetAsync = promisify(client.set).bind(client);
