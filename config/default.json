@@ -1,0 +1,14 @@
+{
+    "logger": {
+        "name": "eacw-flow-api",
+        "level": "info",
+        "toFile": false,
+        "dirLogFile": null
+    },
+    "service": {
+        "id": "eacw-flow-api_1.0.0",
+        "name": "EACW FLOW API",
+        "uri": "http://localhost:3002",
+        "port": 3002
+    }
+}
