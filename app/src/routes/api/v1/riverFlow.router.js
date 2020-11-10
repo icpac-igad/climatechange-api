@@ -34,8 +34,8 @@ class RiverFlowRouter {
     ctx.body = stations;
   }
   static async getStationData(ctx) {
-    ctx.assert(ctx.params.id, 400, "id query not found");
-    ctx.assert(ctx.params.station, 400, "id query not found");
+    ctx.assert(ctx.params.id, 400, "id param not found");
+    ctx.assert(ctx.params.station, 400, "station param not found");
 
     const data = await MikeService.getStationData(
       `${ctx.params.id}/${ctx.params.station}`
@@ -45,7 +45,7 @@ class RiverFlowRouter {
   }
 
   static async getCatchmentData(ctx) {
-    ctx.assert(ctx.params.id, 400, "id query not found");
+    ctx.assert(ctx.params.id, 400, "id param not found");
 
     const data = await MikeService.getCatchmentData(ctx.params.id);
 
