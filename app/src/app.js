@@ -6,11 +6,14 @@ const koaLogger = require("koa-logger");
 const loader = require("loader");
 const ErrorSerializer = require("serializers/errorSerializer");
 const koaSimpleHealthCheck = require("koa-simple-healthcheck");
+const cors = require("@koa/cors");
 
 async function init() {
   return new Promise((resolve, reject) => {
     // instance of koa
     const app = new Koa();
+
+    app.use(cors());
 
     // if environment is dev then load koa-logger
     if (process.env.NODE_ENV === "dev") {

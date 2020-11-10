@@ -13,6 +13,7 @@
         "dev": "NODE_PATH=app/src nodemon app/index.js"
     },
     "dependencies": {
+        "@koa/cors": "^3.1.0",
         "axios": "^0.21.0",
         "bunyan": "^1.8.14",
         "config": "^3.3.2",

@@ -3,7 +3,9 @@ const { all, spread } = require("axios");
 const redis = require("redis");
 const { promisify } = require("util");
 
-const client = redis.createClient(process.env.REDIS_URL || 6379);
+const client = redis.createClient(process.env.REDIS_URL || 6379, {
+  db: process.env.REDIS_DB_NO || 2,
+});
 
 const redisGetAsync = promisify(client.get).bind(client);
 const redisSetAsync = promisify(client.set).bind(client);
@@ -127,7 +129,7 @@ class MikeService {
                   // filter data dates is > than today
                   const data = response.Data.filter(
                     (d) => Date.parse(d[0]) > new Date().getTime()
-                  ).map((d) => [Date.parse(d[0]), d[1]]);
+                  ).map((d) => ({ time: d[0], value: d[1] }));
 
                   if (data && !!data.length) {
                     // find matching station
