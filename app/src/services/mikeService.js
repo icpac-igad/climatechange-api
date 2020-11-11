@@ -8,7 +8,9 @@ const client = redis.createClient(process.env.REDIS_URL || 6379, {
 });
 
 const redisGetAsync = promisify(client.get).bind(client);
-const redisSetAsync = promisify(client.set).bind(client);
+const redisSetAsync = promisify(client.setex).bind(client);
+
+const CACHE_TTL = process.env.CACHE_TTL || 12 * 60 * 60; //cache ttl. default 12 hours
 
 const configBase =
   "ConfigurationName=Water Monitoring;ThemeId=;ObservationPeriod=OBS1;ObservationPeriodOffset=;";
@@ -27,7 +29,7 @@ class MikeService {
         .then((response) => response.data);
 
       if (data) {
-        await redisSetAsync(key, JSON.stringify(data));
+        await redisSetAsync(key, CACHE_TTL, JSON.stringify(data));
       }
     }
 
@@ -52,7 +54,7 @@ class MikeService {
 
       if (data) {
         // set cache
-        await redisSetAsync(key, JSON.stringify(data));
+        await redisSetAsync(key, CACHE_TTL, JSON.stringify(data));
       }
     }
 
@@ -73,7 +75,7 @@ class MikeService {
         .then((response) => response.data[configString]);
 
       if (data) {
-        await redisSetAsync(key, JSON.stringify(data));
+        await redisSetAsync(key, CACHE_TTL, JSON.stringify(data));
       }
     }
     return data;
@@ -92,7 +94,7 @@ class MikeService {
         .then((response) => response.data[0] || {});
 
       if (data) {
-        await redisSetAsync(key, JSON.stringify(data));
+        await redisSetAsync(key, CACHE_TTL, JSON.stringify(data));
       }
     }
 
@@ -162,7 +164,7 @@ class MikeService {
         ));
 
       if (data) {
-        await redisSetAsync(key, JSON.stringify(data));
+        await redisSetAsync(key, CACHE_TTL, JSON.stringify(data));
       }
     }
 
