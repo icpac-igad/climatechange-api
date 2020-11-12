@@ -3,14 +3,17 @@ const { all, spread } = require("axios");
 const redis = require("redis");
 const { promisify } = require("util");
 
-const client = redis.createClient(process.env.REDIS_URL || 6379, {
-  db: process.env.REDIS_DB_NO || 2,
+const REDIS_URL = process.env.REDIS_URL || 6379;
+const REDIS_DB_NO = process.env.REDIS_DB_NO || 2;
+const PUBSUB_CHANNEL = `__keyevent@${REDIS_DB_NO}__:expired`;
+const CACHE_TTL = process.env.CACHE_TTL || 12 * 60 * 60; //cache ttl. default 12 hours
+
+const client = redis.createClient(REDIS_URL, {
+  db: REDIS_DB_NO,
 });
 
 const redisGetAsync = promisify(client.get).bind(client);
 const redisSetAsync = promisify(client.setex).bind(client);
-
-const CACHE_TTL = process.env.CACHE_TTL || 12 * 60 * 60; //cache ttl. default 12 hours
 
 const configBase =
   "ConfigurationName=Water Monitoring;ThemeId=;ObservationPeriod=OBS1;ObservationPeriodOffset=;";
@@ -63,7 +66,7 @@ class MikeService {
   static async getCatchmentStations(catchmentId) {
     const key = `mike:catchmentstations:${catchmentId}`;
 
-    let data = await redisGetAsync(key);
+    let data;
 
     if (data) {
       data = JSON.parse(data);
@@ -101,10 +104,14 @@ class MikeService {
     return data;
   }
 
-  static async getCatchmentData(catchmentId) {
+  static async getCatchmentData(catchmentId, isExpired) {
     const key = `mike:catchmentdata:${catchmentId}`;
 
-    let data = await redisGetAsync(key);
+    let data;
+
+    if (!isExpired) {
+      data = await redisGetAsync(key);
+    }
 
     if (data) {
       data = JSON.parse(data);
@@ -171,5 +178,31 @@ class MikeService {
     return data;
   }
 }
+
+function retryPromise(fn, params, interval = 5000) {
+  return new Promise((resolve, reject) => {
+    return fn(...params)
+      .then(resolve)
+      .catch((error) => {
+        setTimeout(() => {
+          // Passing on "reject" is the important part
+          retryPromise(fn, params, interval).then(resolve, reject);
+        }, interval);
+      });
+  });
+}
+
+const subscriber = redis.createClient(REDIS_URL, {
+  db: REDIS_DB_NO,
+});
+
+subscriber.on("message", async function (channel, key) {
+  if (key.startsWith("mike:catchmentdata:")) {
+    const id = key.split(":")[2];
+    retryPromise(MikeService.getCatchmentData, [id, true]);
+  }
+});
+
+subscriber.subscribe(PUBSUB_CHANNEL);
 
 module.exports = MikeService;
