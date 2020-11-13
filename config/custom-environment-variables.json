@@ -1,0 +1,14 @@
+{
+    "redis": {
+        "url": "REDIS_URL",
+        "cache_ttl": "REDIS_CACHE_TTL"
+    },
+    "services": {
+        "flow_levels": {
+            "base_url": "MIKE_API_URL"
+        },
+        "climate_change": {
+            "base_url": "BERKELEY_DATA_URL"
+        }
+    }
+}

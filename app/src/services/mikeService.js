@@ -1,15 +1,17 @@
+const config = require("config");
 const { apiRequest } = require("request");
 const { all, spread } = require("axios");
 const redis = require("redis");
 const { promisify } = require("util");
 
-const REDIS_URL = process.env.REDIS_URL || 6379;
-const REDIS_DB_NO = process.env.REDIS_DB_NO || 2;
-const PUBSUB_CHANNEL = `__keyevent@${REDIS_DB_NO}__:expired`;
-const CACHE_TTL = process.env.CACHE_TTL || 12 * 60 * 60; //cache ttl. default 12 hours
+const REDIS_URL = config.get("redis.url");
+// get the db no or zero
+const REDIS_DB_NO = REDIS_URL.split("/")[3] || 0;
 
-const client = redis.createClient(REDIS_URL, {
-  db: REDIS_DB_NO,
+const CHANNEL = `__keyevent@${REDIS_DB_NO}__:expired`;
+const CACHE_TTL = config.get("services.flow_levels.cache_ttl");
+const client = redis.createClient({
+  url: REDIS_URL,
 });
 
 const redisGetAsync = promisify(client.get).bind(client);
@@ -192,8 +194,8 @@ function retryPromise(fn, params, interval = 5000) {
   });
 }
 
-const subscriber = redis.createClient(REDIS_URL, {
-  db: REDIS_DB_NO,
+const subscriber = redis.createClient({
+  url: config.get("redis.url"),
 });
 
 subscriber.on("message", async function (channel, key) {
@@ -203,6 +205,6 @@ subscriber.on("message", async function (channel, key) {
   }
 });
 
-subscriber.subscribe(PUBSUB_CHANNEL);
+subscriber.subscribe(CHANNEL);
 
 module.exports = MikeService;

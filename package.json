@@ -17,6 +17,8 @@
         "axios": "^0.21.0",
         "bunyan": "^1.8.14",
         "config": "^3.3.2",
+        "d3-dsv": "^2.0.0",
+        "d3-time-format": "^3.0.0",
         "dotenv": "^8.2.0",
         "koa": "^2.13.0",
         "koa-bodyparser": "^4.3.0",

@@ -1,0 +1,881 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+            "type": "Feature",
+            "properties": {
+                "name": "Addis Abeba",
+                "id": "8.84N-38.11E",
+                "region_value": "2.22 ",
+                "region_value_unc": " 0.30",
+                "country": "Ethiopia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    38.1081,
+                    8.8396
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Awassa",
+                "id": "7.23N-38.11E",
+                "region_value": "2.12 ",
+                "region_value_unc": " 0.25",
+                "country": "Ethiopia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    38.1081,
+                    7.2321
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bahir Dar",
+                "id": "12.05N-37.81E",
+                "region_value": "2.31 ",
+                "region_value_unc": " 0.40",
+                "country": "Ethiopia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    37.8082,
+                    12.0516
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Debre Zeyit",
+                "id": "8.84N-39.73E",
+                "region_value": "2.36 ",
+                "region_value_unc": " 0.41",
+                "country": "Ethiopia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    39.7297,
+                    8.8396
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Dese",
+                "id": "10.45N-40.09E",
+                "region_value": "2.44 ",
+                "region_value_unc": " 0.35",
+                "country": "Ethiopia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    40.0909,
+                    10.4469
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Dire Dawa",
+                "id": "10.45N-41.73E",
+                "region_value": "2.42 ",
+                "region_value_unc": " 0.33",
+                "country": "Ethiopia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    41.7273,
+                    10.4469
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Gondar",
+                "id": "12.05N-37.81E",
+                "region_value": "2.31 ",
+                "region_value_unc": " 0.40",
+                "country": "Ethiopia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    37.8082,
+                    12.0516
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Jimma",
+                "id": "7.23N-36.49E",
+                "region_value": "2.05 ",
+                "region_value_unc": " 0.27",
+                "country": "Ethiopia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    36.4865,
+                    7.2321
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Nazret",
+                "id": "8.84N-39.73E",
+                "region_value": "2.36 ",
+                "region_value_unc": " 0.41",
+                "country": "Ethiopia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    39.7297,
+                    8.8396
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Arusha",
+                "id": "4.02S-36.16E",
+                "region_value": "1.99 ",
+                "region_value_unc": " 0.20",
+                "country": "Tanzania"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    36.1607, -4.0184
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Dar es Salaam",
+                "id": "7.23S-39.73E",
+                "region_value": "1.99 ",
+                "region_value_unc": " 0.32",
+                "country": "Tanzania"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    39.7297, -7.2321
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Dodoma",
+                "id": "5.63S-35.52E",
+                "region_value": "2.01 ",
+                "region_value_unc": " 0.24",
+                "country": "Tanzania"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    35.5157, -5.6266
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Iringa",
+                "id": "7.23S-36.49E",
+                "region_value": "2.00 ",
+                "region_value_unc": " 0.30",
+                "country": "Tanzania"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    36.4865, -7.2321
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Katumba",
+                "id": "8.84S-33.24E",
+                "region_value": "2.04 ",
+                "region_value_unc": " 0.36",
+                "country": "Tanzania"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    33.2432, -8.8396
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kigoma",
+                "id": "4.02S-29.73E",
+                "region_value": "1.91 ",
+                "region_value_unc": " 0.26",
+                "country": "Tanzania"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.7321, -4.0184
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mbeya",
+                "id": "8.84S-33.24E",
+                "region_value": "2.04 ",
+                "region_value_unc": " 0.36",
+                "country": "Tanzania"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    33.2432, -8.8396
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Morogoro",
+                "id": "7.23S-38.11E",
+                "region_value": "2.01 ",
+                "region_value_unc": " 0.29",
+                "country": "Tanzania"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    38.1081, -7.2321
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Moshi",
+                "id": "4.02S-37.77E",
+                "region_value": "1.98 ",
+                "region_value_unc": " 0.17",
+                "country": "Tanzania"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    37.7679, -4.0184
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Musoma",
+                "id": "0.80S-34.55E",
+                "region_value": "1.84 ",
+                "region_value_unc": " 0.18",
+                "country": "Tanzania"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.5536, -0.803
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mwanza",
+                "id": "2.41S-32.95E",
+                "region_value": "1.90 ",
+                "region_value_unc": " 0.21",
+                "country": "Tanzania"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.9464, -2.4098
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Shinyanga",
+                "id": "4.02S-32.95E",
+                "region_value": "1.98 ",
+                "region_value_unc": " 0.23",
+                "country": "Tanzania"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.9464, -4.0184
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Songea",
+                "id": "10.45S-35.18E",
+                "region_value": "2.02 ",
+                "region_value_unc": " 0.40",
+                "country": "Tanzania"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    35.1818, -10.4469
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Tabora",
+                "id": "5.63S-32.29E",
+                "region_value": "2.00 ",
+                "region_value_unc": " 0.26",
+                "country": "Tanzania"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.287, -5.6266
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Tanga",
+                "id": "5.63S-38.74E",
+                "region_value": "1.99 ",
+                "region_value_unc": " 0.22",
+                "country": "Tanzania"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    38.7444, -5.6266
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Zanzibar",
+                "id": "5.63S-38.74E",
+                "region_value": "1.99 ",
+                "region_value_unc": " 0.22",
+                "country": "Tanzania"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    38.7444, -5.6266
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Asmara",
+                "id": "15.27N-39.17E",
+                "region_value": "2.35 ",
+                "region_value_unc": " 0.46",
+                "country": "Eritrea"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    39.1667,
+                    15.2653
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Berbera",
+                "id": "10.45N-45.00E",
+                "region_value": "2.37 ",
+                "region_value_unc": " 0.48",
+                "country": "Somalia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    45.0,
+                    10.4469
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hargeysa",
+                "id": "8.84N-44.59E",
+                "region_value": "2.35 ",
+                "region_value_unc": " 0.44",
+                "country": "Somalia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    44.5946,
+                    8.8396
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Jamame",
+                "id": "0.80N-42.59E",
+                "region_value": "1.99 ",
+                "region_value_unc": " 0.52",
+                "country": "Somalia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    42.5893,
+                    0.803
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kismayo",
+                "id": "0.80S-42.59E",
+                "region_value": "1.98 ",
+                "region_value_unc": " 0.48",
+                "country": "Somalia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    42.5893, -0.803
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mogadishu",
+                "id": "2.41N-45.80E",
+                "region_value": "1.99 ",
+                "region_value_unc": " 0.58",
+                "country": "Somalia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    45.8036,
+                    2.4098
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bujumbura",
+                "id": "4.02S-29.73E",
+                "region_value": "1.91 ",
+                "region_value_unc": " 0.26",
+                "country": "Burundi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.7321, -4.0184
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Eldoret",
+                "id": "0.80N-34.55E",
+                "region_value": "1.79 ",
+                "region_value_unc": " 0.19",
+                "country": "Kenya"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.5536,
+                    0.803
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kisumu",
+                "id": "0.80S-34.55E",
+                "region_value": "1.84 ",
+                "region_value_unc": " 0.18",
+                "country": "Kenya"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.5536, -0.803
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mombasa",
+                "id": "4.02S-39.38E",
+                "region_value": "1.93 ",
+                "region_value_unc": " 0.14",
+                "country": "Kenya"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    39.375, -4.0184
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Nairobi",
+                "id": "0.80S-36.16E",
+                "region_value": "1.87 ",
+                "region_value_unc": " 0.18",
+                "country": "Kenya"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    36.1607, -0.803
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Nakuru",
+                "id": "0.80S-36.16E",
+                "region_value": "1.87 ",
+                "region_value_unc": " 0.18",
+                "country": "Kenya"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    36.1607, -0.803
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ruiru",
+                "id": "0.80S-37.77E",
+                "region_value": "1.89 ",
+                "region_value_unc": " 0.20",
+                "country": "Kenya"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    37.7679, -0.803
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Gulu",
+                "id": "2.41N-32.95E",
+                "region_value": "1.76 ",
+                "region_value_unc": " 0.16",
+                "country": "Uganda"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.9464,
+                    2.4098
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kampala",
+                "id": "0.80N-32.95E",
+                "region_value": "1.81 ",
+                "region_value_unc": " 0.14",
+                "country": "Uganda"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.9464,
+                    0.803
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lira",
+                "id": "2.41N-32.95E",
+                "region_value": "1.76 ",
+                "region_value_unc": " 0.16",
+                "country": "Uganda"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.9464,
+                    2.4098
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Jibuti",
+                "id": "12.05N-42.74E",
+                "region_value": "2.26 ",
+                "region_value_unc": " 0.47",
+                "country": "Djibouti"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    42.7397,
+                    12.0516
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Juba",
+                "id": "4.02N-31.34E",
+                "region_value": "1.74 ",
+                "region_value_unc": " 0.33",
+                "country": "Sudan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    31.3393,
+                    4.0184
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kassala",
+                "id": "15.27N-35.83E",
+                "region_value": "2.12 ",
+                "region_value_unc": " 0.42",
+                "country": "Sudan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    35.8333,
+                    15.2653
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Khartoum",
+                "id": "15.27N-32.50E",
+                "region_value": "2.09 ",
+                "region_value_unc": " 0.34",
+                "country": "Sudan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.5,
+                    15.2653
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kusti",
+                "id": "13.66N-32.20E",
+                "region_value": "2.06 ",
+                "region_value_unc": " 0.38",
+                "country": "Sudan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.2018,
+                    13.6585
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Malakal",
+                "id": "8.84N-31.62E",
+                "region_value": "2.01 ",
+                "region_value_unc": " 0.20",
+                "country": "Sudan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    31.6216,
+                    8.8396
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rabak",
+                "id": "13.66N-32.20E",
+                "region_value": "2.06 ",
+                "region_value_unc": " 0.38",
+                "country": "Sudan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.2018,
+                    13.6585
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Sinnar",
+                "id": "13.66N-33.85E",
+                "region_value": "2.05 ",
+                "region_value_unc": " 0.46",
+                "country": "Sudan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    33.8532,
+                    13.6585
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Umm Durman",
+                "id": "15.27N-32.50E",
+                "region_value": "2.09 ",
+                "region_value_unc": " 0.34",
+                "country": "Sudan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.5,
+                    15.2653
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Wad Madani",
+                "id": "13.66N-33.85E",
+                "region_value": "2.05 ",
+                "region_value_unc": " 0.46",
+                "country": "Sudan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    33.8532,
+                    13.6585
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Waw",
+                "id": "7.23N-28.38E",
+                "region_value": "1.93 ",
+                "region_value_unc": " 0.16",
+                "country": "Sudan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.3784,
+                    7.2321
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kigali",
+                "id": "2.41S-29.73E",
+                "region_value": "1.89 ",
+                "region_value_unc": " 0.23",
+                "country": "Rwanda"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.7321, -2.4098
+                ]
+            }
+        }
+    ]
+}

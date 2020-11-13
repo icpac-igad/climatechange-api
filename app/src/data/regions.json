@@ -1,0 +1,45 @@
+{
+    "DJI": {
+        "name": "DJIBOUTI",
+        "id": "djibouti"
+    },
+    "ERI": {
+        "name": "ERITREA",
+        "id": "eritrea"
+    },
+    "ETH": {
+        "name": "ETHIOPIA",
+        "id": "ethiopia"
+    },
+    "SDN": {
+        "name": "South Sudan",
+        "id": "sudan"
+    },
+    "SOM": {
+        "name": "Somalia",
+        "id": "somalia"
+    },
+    "SSD": {
+        "name": "South Sudan"
+    },
+    "RWA": {
+        "name": "Rwanda",
+        "id": "rwanda"
+    },
+    "BDI": {
+        "name": "Burundi",
+        "id": "burundi"
+    },
+    "KEN": {
+        "name": "Kenya",
+        "id": "kenya"
+    },
+    "UGA": {
+        "name": "Uganda",
+        "id": "uganda"
+    },
+    "TZA": {
+        "name": "Tanzania",
+        "id": "tanzania"
+    }
+}
