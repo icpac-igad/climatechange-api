@@ -65,7 +65,7 @@ exports.readTemperatureFile = (pth) => {
         }
       }
       new_content.push({
-        date: date,
+        date: date.getTime(),
         monthly_value: content[i][2],
         monthly_unc: content[i][3],
         annual_value: content[i][4],
@@ -136,7 +136,7 @@ exports.readCountsFile = (pth) => {
 
       if (!isLocal) {
         new_content.push({
-          date: date,
+          date: date.getTime(),
           inside: content[i][2],
           plus10: content[i][3],
           plus50: content[i][4],
@@ -147,7 +147,7 @@ exports.readCountsFile = (pth) => {
         });
       } else {
         new_content.push({
-          date: date,
+          date: date.getTime(),
           plus10: content[i][2],
           plus50: content[i][3],
           plus100: content[i][4],
