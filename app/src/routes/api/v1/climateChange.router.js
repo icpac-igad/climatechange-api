@@ -1,5 +1,4 @@
 const Router = require("koa-router");
-const logger = require("logger");
 const ClimateChangeService = require("services/climateChangeService");
 
 const router = new Router({

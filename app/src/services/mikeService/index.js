@@ -1,5 +1,5 @@
 const config = require("config");
-const { apiRequest } = require("request");
+const { apiRequest } = require("./request");
 const { all, spread } = require("axios");
 const redis = require("redis");
 const { promisify } = require("util");
