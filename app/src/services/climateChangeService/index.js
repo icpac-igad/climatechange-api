@@ -16,6 +16,16 @@ const redisGetAsync = promisify(client.get).bind(client);
 const redisSetAsync = promisify(client.setex).bind(client);
 
 class ClimateChangeService {
+  static getFeatureDetail(id, type) {
+    let details;
+    if (type === "region") {
+      details = regions[id];
+    } else if (type === "local") {
+      details = cities.features.find((f) => f.properties.id === id);
+    }
+    return details;
+  }
+
   static getDataPath(id, t_type) {
     switch (t_type) {
       case "TAVG_TREND":
@@ -89,6 +99,7 @@ class ClimateChangeService {
       data = await this.getData(geotype, id, "TAVG_TREND");
 
       if (data) {
+        data.featureDetail = this.getFeatureDetail(id, geotype);
         await redisSetAsync(key, CACHE_TTL, JSON.stringify(data));
       }
     }
@@ -106,6 +117,7 @@ class ClimateChangeService {
       data = await this.getData(geotype, id, "TAVG_COUNTS");
 
       if (data) {
+        data.featureDetail = this.getFeatureDetail(id, geotype);
         await redisSetAsync(key, CACHE_TTL, JSON.stringify(data));
       }
     }
@@ -124,6 +136,7 @@ class ClimateChangeService {
       data = await this.getData(geotype, id, "TMAX_TREND");
 
       if (data) {
+        data.featureDetail = this.getFeatureDetail(id, geotype);
         await redisSetAsync(key, CACHE_TTL, JSON.stringify(data));
       }
     }
@@ -142,6 +155,7 @@ class ClimateChangeService {
       data = await this.getData(geotype, id, "TMIN_TREND");
 
       if (data) {
+        data.featureDetail = this.getFeatureDetail(id, geotype);
         await redisSetAsync(key, CACHE_TTL, JSON.stringify(data));
       }
     }
