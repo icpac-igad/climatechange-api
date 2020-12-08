@@ -9,6 +9,6 @@
         "climate_change": {
             "timeout": 30000,
             "cache_ttl": 43200
-        },
+        }
     }
 }
