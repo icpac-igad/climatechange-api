@@ -3,10 +3,6 @@
         "url": "REDIS_URL"
     },
     "services": {
-        "flow_levels": {
-            "base_url": "MIKE_API_URL",
-            "cache_ttl": "FLOW_LEVELS_CACHE_TTL"
-        },
         "climate_change": {
             "base_url": "BERKELEY_DATA_URL",
             "cache_ttl": "CLIMATE_CHANGE_CACHE_TTL"

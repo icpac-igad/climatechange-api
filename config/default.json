@@ -1,6 +1,6 @@
 {
     "logger": {
-        "name": "eacw-flow-api",
+        "name": "climatechange-api",
         "level": "info",
         "toFile": false,
         "dirLogFile": null
@@ -10,9 +10,5 @@
             "timeout": 30000,
             "cache_ttl": 43200
         },
-        "flow_levels": {
-            "timeout": 50000,
-            "cache_ttl": 43200
-        }
     }
 }
