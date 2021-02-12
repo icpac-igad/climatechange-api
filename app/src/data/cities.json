@@ -3,7 +3,7 @@
     "features": [{
             "type": "Feature",
             "properties": {
-                "name": "Addis Abeba",
+                "name": "Addis Ababa",
                 "id": "8.84N-38.11E",
                 "region_value": "2.22 ",
                 "region_value_unc": " 0.30",
