@@ -15,10 +15,7 @@ async function init() {
 
     app.use(cors());
 
-    // if environment is dev then load koa-logger
-    if (process.env.NODE_ENV === "dev") {
-      app.use(koaLogger());
-    }
+    app.use(koaLogger());
 
     app.use(koaSimpleHealthCheck());
 

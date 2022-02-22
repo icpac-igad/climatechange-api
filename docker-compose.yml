@@ -1,0 +1,19 @@
+version: '3.0'
+
+services:
+  climatechange_redis:
+    image: redis:alpine
+    container_name: climatechange_redis
+  climatechange_api:
+    image: eahazardswatch.icpac.net/climatechange_api
+    container_name: climatechange_api
+    build: .
+    command: start
+    restart: ${RESTART_POLICY}
+    environment:
+      - REDIS_URL=redis://climatechange_redis:6379
+      - PORT=${PORT}
+      - BERKELEY_DATA_URL=${BERKELEY_DATA_URL}
+      - CLIMATE_CHANGE_CACHE_TTL=${CLIMATE_CHANGE_CACHE_TTL}
+    ports:
+      - ${PORT}:${PORT}
